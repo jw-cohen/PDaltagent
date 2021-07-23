@@ -24,10 +24,11 @@ services:
       # send reconstituted PagerDuty webhooks to a URL that you specify
 
       # Optional: Set PDAGENTD_API_TOKEN to a PagerDuty API token:
-      # - PDAGENTD_API_TOKEN=<YOUR_API_TOKEN>
+      - PDAGENTD_API_TOKEN=${pagerduty_api_token}
 
       # Optional: Set PDAGENTD_WEBHOOK_DEST_URL to a URL where you want the agent to send the webhooks
-      # - PDAGENTD_WEBHOOK_DEST_URL=<YOUR_DESTINATION_URL>
+      # - PDAGENTD_WEBHOOK_DEST_URL=http://192.168.1.40:4440/api/39/webhook/q251iSVSIOA5Vb4vjDCIg85WLpcUav1i#HelloWorld
+      - PDAGENTD_WEBHOOK_DEST_URL=${rundeck_webhook_url}
 
       # Very Optional: Set PDAGENTD_GET_ALL_LOG_ENTRIES if you want the agent to generate additional 
       # webhooks for non-standard incident lifecycle events, like priority changes and responder requests 
