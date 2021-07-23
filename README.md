@@ -1,4 +1,7 @@
-# PDaltagent
+# NOTE: This is a fork from PDaltagent
+[PDaltagent](https://github.com/martindstone/PDaltagent) is not licensed or supported by PagerDuty.
+
+## PDaltagent
 
 A high-performance, easy-to-install alternative to [PagerDuty Agent](https://www.pagerduty.com/docs/guides/agent-install-guide/)
 
